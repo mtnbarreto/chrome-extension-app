@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import HelloWorld from './../components/HelloWorld.vue'
+import '../pages/increment/style.css'
+import HelloWorld from './HelloWorld.vue'
 </script>
 
 <template>

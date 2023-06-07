@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import '../pages/increment/style.css'
 import { ref } from 'vue'
 
 defineProps<{ msg: string }>()
