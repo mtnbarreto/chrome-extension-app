@@ -1,14 +1,14 @@
 {
-  "name": "chrome-extension-project",
+  "name": "chrome-extension-app",
   "private": true,
-  "version": "0.1.1",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "release": "publish-extension --chrome-zip \"artifacts/rookierep-ai.zip\" --chrome-extension-id \"$CHROME_EXTENSION_ID\" --chrome-client-id \"$CHROME_CLIENT_ID\" --chrome-client-secret \"$CHROME_CLIENT_SECRET\" --chrome-refresh-token \"$CHROME_REFRESH_TOKEN\"",
-    "release:cli": "source .env && publish-extension --chrome-zip \"artifacts/rookierep-ai.zip\" --chrome-extension-id \"$CHROME_EXTENSION_ID\" --chrome-client-id \"$CHROME_CLIENT_ID\" --chrome-client-secret \"$CHROME_CLIENT_SECRET\" --chrome-refresh-token \"$CHROME_REFRESH_TOKEN\"",
+    "release": "publish-extension --chrome-zip \"artifacts/chrome-extension-app.zip\" --chrome-extension-id \"$CHROME_EXTENSION_ID\" --chrome-client-id \"$CHROME_CLIENT_ID\" --chrome-client-secret \"$CHROME_CLIENT_SECRET\" --chrome-refresh-token \"$CHROME_REFRESH_TOKEN\"",
+    "release:cli": "source .env && publish-extension --chrome-zip \"artifacts/chrome-extension-app.zip\" --chrome-extension-id \"$CHROME_EXTENSION_ID\" --chrome-client-id \"$CHROME_CLIENT_ID\" --chrome-client-secret \"$CHROME_CLIENT_SECRET\" --chrome-refresh-token \"$CHROME_REFRESH_TOKEN\"",
     "format": "rome format . --write",
     "lint": "rome check .",
     "lint:fix": "npm run lint --apply",

@@ -1,13 +1,8 @@
-# chrome-extension-project
+# chrome-extension-app
 
-## 0.1.1
+## 0.0.1
 
 ### Patch Changes
 
-- Testing changeset
+- Open source project
 
-## 0.1.0
-
-### Minor Changes
-
-- WIP first version

@@ -9,9 +9,9 @@ const [major, minor, patch, label = '0'] = version
 export default defineManifest(async (env) => ({
   name:
     env.mode === 'staging'
-      ? '[INTERNAL] RookieRep.ai'
-      : 'RookieRep.ai - AI powered sales autopilot',
-  description: 'RookieRep.ai - sales bla bla bla',
+      ? '[INTERNAL] chrome-extension-app'
+      : 'chrome-extension-app',
+  description: 'chrome-extension-app - <description>',
   version: `${major}.${minor}.${patch}.${label}`,
   version_name: version,
   icons: {

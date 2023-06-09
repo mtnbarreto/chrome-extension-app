@@ -25,7 +25,7 @@ export default defineConfig({
     zipPack({
       inDir: 'dist',
       outDir: 'artifacts',
-      outFileName: 'rookierep-ai.zip',
+      outFileName: 'chrome-extension-app.zip',
     }),
   ],
 })

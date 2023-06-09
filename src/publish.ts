@@ -3,7 +3,7 @@ import { publishExtension } from 'publish-browser-extension'
 publishExtension({
   dryRun: true,
   chrome: {
-    zip: 'artifacts/rookierep-ai.zip',
+    zip: 'artifacts/chrome-extension-app.zip',
     extensionId: '',
     clientId: process.env.CHROME_CLIENT_ID as string,
     clientSecret: process.env.CHROME_CLIENT_SECRET as string,
