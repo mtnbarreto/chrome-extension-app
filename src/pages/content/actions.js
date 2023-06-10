@@ -1,8 +1,6 @@
 import { createApp } from 'vue'
 import Actions from '../../components/Actions.vue'
 
-const _article = document.querySelector('article')
-
 const MOUNT_EL_ID = 'gmail-actions-extension'
 
 let mountEl = document.getElementById(MOUNT_EL_ID)

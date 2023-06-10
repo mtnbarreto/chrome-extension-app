@@ -21,6 +21,7 @@ export default defineManifest(async (env) => ({
     '128': 'icons/icon-128.png',
   },
   action: {
+    default_popup: "src/pages/increment/index.html",
     default_title: 'Default Action Title, default_popup: index.html',
   },
   background: {
@@ -29,10 +30,7 @@ export default defineManifest(async (env) => ({
   content_scripts: [
     {
       js: ['src/pages/content/actions.js'],
-      matches: [
-        'https://mail.google.com/mail/u/0/#*/*',
-        'https://mail.google.com/mail/u/0/#label/*/*',
-      ],
+      matches: ["https://mail.google.com/**/*"],
     },
   ],
   manifest_version: 3,

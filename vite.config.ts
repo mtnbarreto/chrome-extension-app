@@ -28,4 +28,10 @@ export default defineConfig({
       outFileName: 'chrome-extension-app.zip',
     }),
   ],
+  server: {
+    port: 5173,
+    hmr: {
+      port: 5173,
+    },
+  },
 })
