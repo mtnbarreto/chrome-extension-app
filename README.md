@@ -12,16 +12,33 @@ Chrome Extension App uses the best web development practices and provide best DX
 - 🇮🇹 Rome. Linter and Formatting.
 - 🥓 crxjs vite plugin. Vite plugin that helps you make Chrome Extensions.
 - 👩‍🎨 Postcss with autoprefixer and tailwindcss plugins
+- 🎗️ Typescript support
+- 🎹 Github actions running code linter and formatting.
 
-## 💻 Commands
+## 💻 Using the template to create your own chrome extension
 
 In orden to use this template follow these steps:
 
-1. Clone the repository.
+1. Fork this repository. 
+2. Clone the fork to your local machine. 
+3. Open the project in VSCode (okay if you have preference for another IDE).
+4. Run `npm install` to set up the dependencies.
+5. Run `npm rum build` which build the extension for production. It provides the optimized app code at `dist` folder and also a zip compressed file to upload to Chrome Extensions store under `artifacts` folder. 
 
+### Dev server & enabling HMR
 
+`npm run dev`
+then ypu can make changes on the code and expect the chrome extension to update accordingly.
 
-2. 
+### Linter & Code Formatting
+
+`npm run format` runs the formatter ensuring code . `rome format . --write` under the hood.
+
+`npm run lint`. runs checks. `npx rome check .` under the hood.
+
+`npm run lint:fix`. runs checks and apply safe fixes and formatting. `npx rome check . --apply` under the hood.
+
+Project also set up [github action](/.github/workflows/checks.yml) that runs the `npx rome ci .` when push on `main` or  `release` branch.
 
 
 ## 💚 Contributing
