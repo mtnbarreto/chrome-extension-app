@@ -25,8 +25,8 @@ export default defineManifest(async (env) => ({
     default_title: 'Default Action Title, default_popup: index.html',
   },
   background: {
-    service_worker: 'src/pages/background/background.ts',    
-    type: "module"
+    service_worker: 'src/pages/background/background.ts',
+    type: 'module',
   },
   content_scripts: [
     {
