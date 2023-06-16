@@ -27,8 +27,16 @@ In orden to use this template follow these steps:
 
 ### Load the extension in Chrome
 
-6. Open Chrome an then go to Chrome -> Settings -> Extensions. Make sure developer mode is enabled.
+6. Open Chrome an then go to Chrome -> Settings -> Extensions. Make sure develoq per mode is enabled.
 7. Click `Load unpacked` button and select `dist` folder from the root folder of the project.
+
+Check the extension load properly by clicking on extension icon, extension pop app should be shown
+
+![chrome extension popup](/.github/assets/action.png)
+
+Check content script works by navigating to gmail. Something like this should appear:
+
+![chrome extension content script](/.github/assets/action.png)
 
 ### Dev server & enabling HMR
 
@@ -55,8 +63,7 @@ Contribute to the project by creating a pull request. Please follow these steps:
 3. Create a new branch from the main branch.
 4. Make your changes and commit them.
 5. Push your branch to your fork.
-6. Create a pull request on this repository with a descriptive title and message.
-7. Make sure you run `npm run lint:fix` before create the pr because github actions checks it. 
+6. Create a pull request on this repository with a descriptive title and message. Make sure you run `npm run lint:fix` before creating the pull request because github actions checks it. 
 
 ## 🏉 License 
 
