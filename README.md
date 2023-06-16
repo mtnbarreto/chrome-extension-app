@@ -25,6 +25,11 @@ In orden to use this template follow these steps:
 4. Run `npm install` to set up the dependencies.
 5. Run `npm rum build` which build the extension for production. It provides the optimized app code at `dist` folder and also a zip compressed file to upload to Chrome Extensions store under `artifacts` folder. 
 
+### Load the extension in Chrome
+
+6. Open Chrome an then go to Chrome -> Settings -> Extensions. Make sure developer mode is enabled.
+7. Click `Load unpacked` button and select `dist` folder from the root folder of the project.
+
 ### Dev server & enabling HMR
 
 `npm run dev`
@@ -51,17 +56,11 @@ Contribute to the project by creating a pull request. Please follow these steps:
 4. Make your changes and commit them.
 5. Push your branch to your fork.
 6. Create a pull request on this repository with a descriptive title and message.
-
-Checkout the CONTRIBUTING.md file for more information.
+7. Make sure you run `npm run lint:fix` before create the pr because github actions checks it. 
 
 ## 🏉 License 
 
 Chrome Extension App is licensed under the [MIT License](https://https://github.com/mtnbarreto/chrome-extension-app/blob/main/LICENSE). 
-
-
-
-
-
 
 
 
